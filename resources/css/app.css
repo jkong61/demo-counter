@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+@layer components{
+    .custom-container {
+        @apply max-w-6xl mx-auto sm:px-6 lg:px-8
+    }
+
+    .form-control {
+        @apply rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+    }
+}
